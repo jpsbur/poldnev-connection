@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="https://poldnev.ru/lksh/js/data_main.js"></script>
+    <script type="text/javascript" src="connection.js"></script>
+    <style>
+        div {
+            text-align: center;
+        }
+        div.topWrapper {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 10px;
+        }
+        div.yearElement {
+            grid-column: 1 / span 2;
+            border-top-width: 1px;
+            border-top-color: black;
+            border-top-style: solid;
+        }
+        div.wideElement {
+            grid-column: 1 / span 2;
+        }
+        div.leftElement {
+            grid-column: 1;
+        }
+        div.rightElement {
+            grid-column: 2;
+        }
+        .weak {
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <div id="output"></div>
+    <input type="text" id="idA" value="235" />
+    <input type="text" id="idB" value="963" />
+    <input type="checkbox" id="showNonMatching" checked />
+    <label for="showNonMatching">Show non-matching sessions</label>
+    <button onclick="run();">Run</button>
+</body>
+</html>
